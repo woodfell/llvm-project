@@ -10,7 +10,6 @@ add_clang_library(clangTidyMiscModule
   NewDeleteOverloadsCheck.cpp
   NoRecursionCheck.cpp
   NonCopyableObjects.cpp
-  NonPrivateMemberVariablesInClassesCheck.cpp
   RedundantExpressionCheck.cpp
   StaticAssertCheck.cpp
   ThrowByValueCatchByReferenceCheck.cpp

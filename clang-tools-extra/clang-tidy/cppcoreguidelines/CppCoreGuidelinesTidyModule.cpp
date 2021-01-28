@@ -9,16 +9,10 @@
 #include "../ClangTidy.h"
 #include "../ClangTidyModule.h"
 #include "../ClangTidyModuleRegistry.h"
-#include "../misc/NonPrivateMemberVariablesInClassesCheck.h"
 #include "../misc/UnconventionalAssignOperatorCheck.h"
-#include "../modernize/AvoidCArraysCheck.h"
 #include "../modernize/UseOverrideCheck.h"
-#include "../readability/MagicNumbersCheck.h"
 #include "AvoidGotoCheck.h"
-#include "AvoidNonConstGlobalVariablesCheck.h"
-#include "InitVariablesCheck.h"
 #include "InterfacesGlobalInitCheck.h"
-#include "MacroUsageCheck.h"
 #include "NarrowingConversionsCheck.h"
 #include "NoMallocCheck.h"
 #include "OwningMemoryCheck.h"
@@ -43,27 +37,15 @@ namespace cppcoreguidelines {
 class CppCoreGuidelinesModule : public ClangTidyModule {
 public:
   void addCheckFactories(ClangTidyCheckFactories &CheckFactories) override {
-    CheckFactories.registerCheck<modernize::AvoidCArraysCheck>(
-        "cppcoreguidelines-avoid-c-arrays");
     CheckFactories.registerCheck<AvoidGotoCheck>(
         "cppcoreguidelines-avoid-goto");
-    CheckFactories.registerCheck<readability::MagicNumbersCheck>(
-        "cppcoreguidelines-avoid-magic-numbers");
-    CheckFactories.registerCheck<AvoidNonConstGlobalVariablesCheck>(
-        "cppcoreguidelines-avoid-non-const-global-variables");
     CheckFactories.registerCheck<modernize::UseOverrideCheck>(
         "cppcoreguidelines-explicit-virtual-functions");
-    CheckFactories.registerCheck<InitVariablesCheck>(
-        "cppcoreguidelines-init-variables");
     CheckFactories.registerCheck<InterfacesGlobalInitCheck>(
         "cppcoreguidelines-interfaces-global-init");
-    CheckFactories.registerCheck<MacroUsageCheck>(
-        "cppcoreguidelines-macro-usage");
     CheckFactories.registerCheck<NarrowingConversionsCheck>(
         "cppcoreguidelines-narrowing-conversions");
     CheckFactories.registerCheck<NoMallocCheck>("cppcoreguidelines-no-malloc");
-    CheckFactories.registerCheck<misc::NonPrivateMemberVariablesInClassesCheck>(
-        "cppcoreguidelines-non-private-member-variables-in-classes");
     CheckFactories.registerCheck<OwningMemoryCheck>(
         "cppcoreguidelines-owning-memory");
     CheckFactories.registerCheck<ProBoundsArrayToPointerDecayCheck>(

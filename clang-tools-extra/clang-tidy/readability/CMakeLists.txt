@@ -17,7 +17,6 @@ add_clang_library(clangTidyReadabilityModule
   ImplicitBoolConversionCheck.cpp
   InconsistentDeclarationParameterNameCheck.cpp
   IsolateDeclarationCheck.cpp
-  MagicNumbersCheck.cpp
   MakeMemberFunctionConstCheck.cpp
   MisleadingIndentationCheck.cpp
   MisplacedArrayIndexCheck.cpp
@@ -26,7 +25,6 @@ add_clang_library(clangTidyReadabilityModule
   NonConstParameterCheck.cpp
   QualifiedAutoCheck.cpp
   ReadabilityTidyModule.cpp
-  RedundantAccessSpecifiersCheck.cpp
   RedundantControlFlowCheck.cpp
   RedundantDeclarationCheck.cpp
   RedundantFunctionPtrDereferenceCheck.cpp

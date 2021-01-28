@@ -10,7 +10,6 @@
 #include "../ClangTidyModule.h"
 #include "../ClangTidyModuleRegistry.h"
 #include "AvoidBindCheck.h"
-#include "AvoidCArraysCheck.h"
 #include "ConcatNestedNamespacesCheck.h"
 #include "DeprecatedHeadersCheck.h"
 #include "DeprecatedIosBaseAliasesCheck.h"
@@ -36,7 +35,6 @@
 #include "UseNoexceptCheck.h"
 #include "UseNullptrCheck.h"
 #include "UseOverrideCheck.h"
-#include "UseTrailingReturnTypeCheck.h"
 #include "UseTransparentFunctorsCheck.h"
 #include "UseUncaughtExceptionsCheck.h"
 #include "UseUsingCheck.h"
@@ -51,7 +49,6 @@ class ModernizeModule : public ClangTidyModule {
 public:
   void addCheckFactories(ClangTidyCheckFactories &CheckFactories) override {
     CheckFactories.registerCheck<AvoidBindCheck>("modernize-avoid-bind");
-    CheckFactories.registerCheck<AvoidCArraysCheck>("modernize-avoid-c-arrays");
     CheckFactories.registerCheck<ConcatNestedNamespacesCheck>(
         "modernize-concat-nested-namespaces");
     CheckFactories.registerCheck<DeprecatedHeadersCheck>(
@@ -91,8 +88,6 @@ public:
     CheckFactories.registerCheck<UseNoexceptCheck>("modernize-use-noexcept");
     CheckFactories.registerCheck<UseNullptrCheck>("modernize-use-nullptr");
     CheckFactories.registerCheck<UseOverrideCheck>("modernize-use-override");
-    CheckFactories.registerCheck<UseTrailingReturnTypeCheck>(
-        "modernize-use-trailing-return-type");
     CheckFactories.registerCheck<UseTransparentFunctorsCheck>(
         "modernize-use-transparent-functors");
     CheckFactories.registerCheck<UseUncaughtExceptionsCheck>(
