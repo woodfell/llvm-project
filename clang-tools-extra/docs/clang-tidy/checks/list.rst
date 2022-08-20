@@ -329,6 +329,13 @@ Clang-Tidy Checks
    `readability-uniqueptr-delete-release <readability-uniqueptr-delete-release.html>`_, "Yes"
    `readability-uppercase-literal-suffix <readability-uppercase-literal-suffix.html>`_, "Yes"
    `readability-use-anyofallof <readability-use-anyofallof.html>`_,
+   `swift-NoStdlibAssert <swift-NoStdlibAssert.html>`_,
+   `swift-atomic-flag-constructor <swift-atomic-flag-constructor.html>`_,
+   `swift-forbidden-functions <swift-forbidden-functions.html>`_,
+   `swift-forbidden-types <swift-forbidden-types.html>`_, "Yes"
+   `swift-no-try-catch <swift-no-try-catch.html>`_,
+   `swift-noexcept-correctness <swift-noexcept-correctness.html>`_,
+   `swift-non-placement-new <swift-non-placement-new.html>`_,
    `zircon-temporary-objects <zircon-temporary-objects.html>`_,
 
 

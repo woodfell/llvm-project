@@ -274,6 +274,41 @@ New checks
   Reports identifiers whose names are too short. Currently checks local
   variables and function parameters only.
 
+- New :doc:`swift-NoStdlibAssert
+  <clang-tidy/checks/swift-NoStdlibAssert>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-atomic-flag-constructor
+  <clang-tidy/checks/swift-atomic-flag-constructor>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-forbidden-functions
+  <clang-tidy/checks/swift-forbidden-functions>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-forbidden-types
+  <clang-tidy/checks/swift-forbidden-types>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-no-try-catch
+  <clang-tidy/checks/swift-no-try-catch>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-noexcept-correctness
+  <clang-tidy/checks/swift-noexcept-correctness>` check.
+
+  FIXME: add release notes.
+
+- New :doc:`swift-non-placement-new
+  <clang-tidy/checks/swift-non-placement-new>` check.
+
+  FIXME: add release notes.
+
 New check aliases
 ^^^^^^^^^^^^^^^^^
 
